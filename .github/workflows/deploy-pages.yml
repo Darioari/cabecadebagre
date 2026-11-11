@@ -29,9 +29,10 @@ jobs:
 
       - name: Prepare site files
         run: |
-          mkdir -p _site/assets
+          mkdir -p _site/assets/menu
+          cp assets/menu/petiscos.jpg assets/menu/pratos-de-mar.jpg assets/menu/sobremesas-da-casa.jpg assets/menu/bebidas-da-casa.jpg _site/assets/menu/
           cp index.html index-cabeca-bagre.html robots.txt sitemap.xml llms.txt CNAME .nojekyll _site/
-          cp assets/cabeca-bagre-hero.jpg assets/restaurante-salao.jpg _site/assets/
+          cp assets/favicon.svg assets/cabeca-bagre-hero.jpg assets/restaurante-salao.jpg _site/assets/
           cp assets/galeria-petisco-na-mesa.jpg assets/galeria-encontro-na-casa.jpg assets/galeria-moqueca.jpg assets/galeria-prato-e-cliente.jpg assets/galeria-servico-na-mesa.jpg _site/assets/
           cp assets/logo-cabeça-de-bagre-azul.webp assets/logo-cabeça-de-bagre-branco.webp _site/assets/
 
